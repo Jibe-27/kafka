@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entry and Exit Events</title>
+</head>
+<body>
+    <h1>Entry and Exit Events</h1>
+    <h2>Entry Events:</h2>
+    <ul>
+        <% entryEvents.forEach(event => { %>
+            <li>
+                Vehicle ID: <%= event.vehicleId %>, Type: <%= event.eventType %>, Timestamp: <%= event.timestamp %>
+            </li>
+        <% }); %>
+    </ul>
+
+    <h2>Exit Events:</h2>
+    <ul>
+        <% exitEvents.forEach(event => { %>
+            <li>
+                Vehicle ID: <%= event.vehicleId %>, Type: <%= event.eventType %>, Timestamp: <%= event.timestamp %>
+            </li>
+        <% }); %>
+    </ul>
+</body>
+</html>
